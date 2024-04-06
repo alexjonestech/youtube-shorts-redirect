@@ -1,0 +1,22 @@
+/* style.css */
+.youtube-redirect-link {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    padding: 10px 20px;
+    background-color: #FF0000;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.youtube-redirect-link:hover {
+    opacity: 1;
+}

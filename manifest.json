@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Redirect",
+  "version": "1.0",
+  // Other necessary keys remain unchanged...
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/shorts/*"],
+      "js": ["contentScript.js"],
+      "css": ["style.css"]
+    }
+  ]
+}
