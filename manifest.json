@@ -1,13 +1,46 @@
 {
   "manifest_version": 3,
-  "name": "YouTube Redirect",
+
+  "name": "Your Extension Name",
   "version": "1.0",
-  // Other necessary keys remain unchanged...
+  "description": "A brief description of your extension.",
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+
   "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/shorts/*"],
-      "js": ["contentScript.js"],
-      "css": ["style.css"]
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ],
+
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+
+  "options_page": "options.html",
+
+  "web_accessible_resources": [
+    {
+      "resources": ["images/icon16.png", "images/icon48.png", "images/icon128.png"],
+      "matches": ["<all_urls>"]
     }
   ]
 }
