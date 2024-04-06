@@ -7,20 +7,8 @@
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/shorts/*"],
-      "js": ["content.js"],
+      "js": ["contentScript.js"],
       "css": ["style.css"]
     }
-  ],
-  "icons": {
-    "48": "icon.png"
-  },
-  "action": {
-    "default_icon": {
-      "16": "icon16.png",
-      "48": "icon48.png",
-      "128": "icon128.png"
-    },
-    "default_title": "YouTube Shorts Redirect",
-    "default_popup": "popup.html"
-  }
+  ]
 }
